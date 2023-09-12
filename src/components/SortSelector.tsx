@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSortOrder } from '../features/search/searchSlice';
-import { RootState } from '../app/store'; // Make sure you import RootState if not done already
+import { RootState } from '../app/store'; 
 import './SortSelector.scss';
 
 const SortSelector: React.FC = () => {
