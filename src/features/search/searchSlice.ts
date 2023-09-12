@@ -36,7 +36,7 @@ const initialState: SearchState = {
 export const loadMoreBooks =  createAsyncThunk('search/loadMoreBooks', async (_, { getState }) => {
   const state: SearchState = getState() as any;
   const { query, category, sortOrder, startIndex } = state;
-  const API_KEY = 'AIzaSyBQSDKhpdEd8C8iJopbDBWfh0t29TN36Qc'; 
+  const API_KEY = ''; 
 
   const endpoint = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${API_KEY}${category !== 'all' ? `+subject:${category}` : ''}&orderBy=${sortOrder}&startIndex=${startIndex}&maxResults=30`;
   
