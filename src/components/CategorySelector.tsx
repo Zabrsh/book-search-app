@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCategory } from '../features/search/searchSlice';
-import { RootState } from '../app/store'; // Assuming you have defined your RootState in a separate file named 'store.ts' or 'store/index.ts'
+import { RootState } from '../app/store'; 
 
 const CategorySelector: React.FC = () => {
   const dispatch = useDispatch();
