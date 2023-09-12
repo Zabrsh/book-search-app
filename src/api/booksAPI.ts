@@ -1,5 +1,5 @@
 const API_ENDPOINT = 'https://www.googleapis.com/books/v1/volumes';
-const API_KEY = 'AIzaSyBQSDKhpdEd8C8iJopbDBWfh0t29TN36Qc'; 
+const API_KEY = ''; 
 
 export const searchBooks = async (query: string, category: string, sortOrder: string, startIndex: number) => {
   let url = `${API_ENDPOINT}?q=${query}&key=${API_KEY}&startIndex=${startIndex}&maxResults=30`;
